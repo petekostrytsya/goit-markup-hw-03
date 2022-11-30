@@ -58,6 +58,7 @@ img {
 
 
 .text {
+    margin-top: 8px;
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.5;
@@ -85,11 +86,12 @@ img {
 
 .menu {
     display: flex;
-    align-items: center; 
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.menu-item:not(last-child) {
-    margin-right: 40px;
+.menu-item {
+    flex-basis: calc((100% - 80px) / 3);
 }
 
 
@@ -126,11 +128,15 @@ img {
 
 .communication {
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     align-items: center;
     margin-left: auto;
+    
 }
-.contacts:not(last-child) {
-    margin-right: 40px;
+.contacts {
+    /* margin-right: 40px; */
+    /* flex-basis: calc((100% - 40px) / 2); */
 }
 .contacts:hover,
 .contacts:focus {
@@ -147,6 +153,7 @@ img {
 
 /* =====================HERO====================== */
 .hero {
+    text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
     background-color: var(--accent-color);
@@ -154,8 +161,7 @@ img {
 
 
 .hero-title {
-    width: 492px;
-    height: 120px;
+    width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -171,11 +177,8 @@ img {
 .hero-button:focus {
     color: #FFFFFF;
     background-color: #4D5AE5;
-    border-color: #4D5AE5;
 }
 .hero-button {
-    display: block;
-    margin: auto;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 32px;
@@ -186,7 +189,7 @@ img {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
-    border-color: #4D5AE5;
+    border-color: transparent;
     cursor: pointer;
 }
 /* ======================/HERO====================== */
@@ -227,7 +230,9 @@ img {
 /* ============================= COMPANY-QUALITY =======================*/
 
 .theses {
-    display: flex;   
+    display: flex;
+    gap: 24px;
+
 }
 
 /* ============================= /COMPANY-QUALITY =======================*/
@@ -263,7 +268,10 @@ img {
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 32px;
-    border: 1px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* =============================== /EMPLOYEES ================================ */
@@ -292,6 +300,7 @@ img {
 }
 
 .text-footer {
+    margin-top: 8px;
     width: 264px;
     font-size: 16px;
     line-height: 1.5;
@@ -317,10 +326,12 @@ img {
     background-color: #E7E9FC;
     color: #4D5AE5;
     cursor: pointer;
+    box-shadow: 4px;
+    border-radius: 4px;
 }
 
 .menu-portfolio {
-    margin-top: 96px;
+    padding-top: 96px;
     margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
@@ -329,10 +340,12 @@ img {
 }
 
 .works-portfolio {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    /* gap: 24px; */
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .works-card-content-wrapper {
