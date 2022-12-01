@@ -71,8 +71,6 @@ img {
 /* ====================HEADER==================== */
 
 .page-header {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08)
@@ -92,8 +90,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .menu-item {
@@ -124,6 +120,9 @@ img {
     color: #4D5AE5;
 }
 .nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -137,9 +136,7 @@ img {
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
-    margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;  
+    margin-left: auto; 
 }
 .contacts {
     /* margin-right: 40px; */
@@ -150,6 +147,9 @@ img {
     color: #4D5AE5;
 }
 .contacts {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -217,7 +217,7 @@ img {
 }
 
 .company-quality {
-    margin-bottom: none;
+    padding-bottom: 0;
 }
 
 .title-section {
@@ -324,11 +324,16 @@ img {
 
 /* ======================MAIN PORTFOLIO===================== */
 
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .menu-button:hover,
 .menu-button:focus {
     color: #FFFFFF;
     background-color: #4D5AE5;
-    border-color: #4D5AE5;
+    border-color: #E7E9FC;
 }
 
 .menu-button {
@@ -347,7 +352,6 @@ img {
 }
 
 .menu-portfolio {
-    /* padding-top: 96px; */
     margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
@@ -356,10 +360,8 @@ img {
 }
 
 .works-portfolio {
-    /* padding-bottom: 120px; */
     display: flex;
     flex-wrap: wrap;
-    /* gap: 24px; */
     row-gap: 48px;
     column-gap: 24px;
 }
@@ -369,6 +371,9 @@ img {
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 32px;
-    border: 1px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 /* ======================/MAIN PORTFOLIO===================== */
