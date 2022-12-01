@@ -58,6 +58,7 @@ img {
 
 
 .text {
+    flex-basis: fill;
     margin-top: 8px;
     font-family: var(--primary-font);
     font-size: 16px;
@@ -70,8 +71,11 @@ img {
 /* ====================HEADER==================== */
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08)
 }
 
 .page-header-contaniar {
@@ -88,6 +92,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-item {
@@ -132,7 +138,8 @@ img {
     gap: 40px;
     align-items: center;
     margin-left: auto;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;  
 }
 .contacts {
     /* margin-right: 40px; */
@@ -209,6 +216,10 @@ img {
     margin: -1px;
 }
 
+.company-quality {
+    margin-bottom: none;
+}
+
 .title-section {
     margin-bottom: 72px;
     font-weight: 700;
@@ -261,6 +272,11 @@ img {
 
 .employees-card {
     flex-basis: calc((100% - 72px) / 4);
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .employees-card-content-wrapper {
@@ -269,9 +285,6 @@ img {
     padding-right: 16px;
     padding-bottom: 32px;
     text-align: center;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px;
-    border-radius: 0px 0px 4px 4px;
 }
 
 /* =============================== /EMPLOYEES ================================ */
@@ -326,12 +339,15 @@ img {
     background-color: #E7E9FC;
     color: #4D5AE5;
     cursor: pointer;
-    box-shadow: 4px;
-    border-radius: 4px;
+    box-shadow: 0px 2px
+    rgba(0, 0, 0, 0.12), 0px 2px
+    rgba(0, 0, 0, 0.08), 0px 3px
+    rgba(0, 0, 0, 0.1);
+    border-radius: 2px 1px 1px;
 }
 
 .menu-portfolio {
-    padding-top: 96px;
+    /* padding-top: 96px; */
     margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
@@ -340,7 +356,7 @@ img {
 }
 
 .works-portfolio {
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     display: flex;
     flex-wrap: wrap;
     /* gap: 24px; */
